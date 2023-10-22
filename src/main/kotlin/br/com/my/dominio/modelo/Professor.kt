@@ -1,8 +1,5 @@
 package br.com.my.dominio.modelo
 
-import br.com.my.infraestrutura.repositorio.RepositorioUsuario
-import java.util.*
-
 class Professor : Usuario {
     var especialidade: String
 
@@ -10,6 +7,5 @@ class Professor : Usuario {
         this.especialidade = especialidade
     }
 
-    override val paginaInicial: String get() = "/home/professor/alunos"
     override fun toString(): String = super.toString() + " - Especialidade [${especialidade}]"
 }

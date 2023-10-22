@@ -1,9 +1,13 @@
 package br.com.my.dominio.modelo
 
-import br.com.my.infraestrutura.repositorio.RepositorioUsuario
-import java.util.*
+import java.util.UUID
 
-class Aluno : Usuario {
-    constructor(nome: String, cpf: String) : super(nome, cpf)
-    override val paginaInicial: String get() = "/home/aluno"
+class Aluno(
+    val alunoId: String = UUID.randomUUID().toString(),
+    nome: String,
+    cpf: String
+) : Usuario(
+    nome = nome,
+    cpf = cpf
+) {
 }

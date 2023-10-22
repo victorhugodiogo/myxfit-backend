@@ -1,8 +1,7 @@
 package br.com.my.aplicacao.payload
 
-class UserResponseDTO(
+class AlunoResponse(
     val nome: String,
     val matricula: String,
     val objetivoTreino: String
-) {
-}
+)
