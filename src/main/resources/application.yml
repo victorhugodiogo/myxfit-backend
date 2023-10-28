@@ -1,0 +1,35 @@
+server:
+  servlet:
+    context-path: /myxfit
+  port: ${PORT:8080}
+spring:
+  application:
+    name: myxfit
+  jooq:
+    sql-dialect: mysql
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/db_myxfit}
+    username: ${DB_USER:user_myxfit}
+    password: ${DB_PASSWORD:1234}
+  jackson:
+    default-property-inclusion: non_absent
+    time-zone: America/Sao_Paulo
+
+logging:
+  level:
+    root: info
+    org.jooq.Constants: OFF
+
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+
+spring-doc:
+  swagger-ui:
+    path: /ui
+    enabled: true
+  api-docs:
+    path: /api
+    enabled: true
