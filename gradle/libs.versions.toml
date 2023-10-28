@@ -1,0 +1,42 @@
+[versions]
+kotlin = "1.9.10"
+spring = "3.1.5"
+springDepMan = "1.1.3"
+jooqPlugin = "8.2.1"
+jooq = "3.18.7"
+mysql = "8.2.0"
+liquibasePlugin = "2.2.0"
+picocli = "4.6.1"
+liquibase = "4.17.2"
+springDoc = "2.2.0"
+kotlinLogging = "5.1.0"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring" }
+spring-depMan = { id = "io.spring.dependency-management", version.ref = "springDepMan" }
+jooq = { id = "nu.studer.jooq", version.ref = "jooqPlugin" }
+liquibase = { id = "org.liquibase.gradle", version.ref = "liquibasePlugin" }
+
+[libraries]
+mysql = { module = "com.mysql:mysql-connector-j", version.ref = "mysql" }
+jooq = { module = "org.jooq:jooq", version.ref = "jooq" }
+jacksonKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+liquibase = { module = "org.liquibase:liquibase-core", version.ref = "liquibase" }
+picocli = { module = "info.picocli:picocli", version.ref = "picocli" }
+spring-doc-ui = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springDoc" }
+spring-doc-api = { module = "org.springdoc:springdoc-openapi-starter-webmvc-api", version.ref = "springDoc" }
+kotlinLogging = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "kotlinLogging" }
+
+## Test
+spring-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-testcontainers = { module = "org.springframework.boot:spring-boot-testcontainers" }
+spring-test = { module = "org.springframework:spring-test" }
+
+## Managed by Spring
+spring-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
+spring-starter-jooq = { module = "org.springframework.boot:spring-boot-starter-jooq" }
+spring-data-commons = { module = "org.springframework.data:spring-data-commons" }
+spring-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
