@@ -1,9 +1,8 @@
 package br.com.my.infraestrutura.repositorio
 
 import br.com.my.dominio.modelo.Aluno
-import org.springframework.stereotype.Repository
+import org.springframework.stereotype.Service
 
-@Repository
 class RepositorioAluno(val bdAluno : MutableMap<String,Aluno> = mutableMapOf()) {
 
     fun salvar(aluno: Aluno) : String {
