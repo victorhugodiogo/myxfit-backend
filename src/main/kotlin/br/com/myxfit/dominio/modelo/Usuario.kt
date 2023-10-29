@@ -2,7 +2,7 @@ package br.com.myxfit.dominio.modelo
 
 abstract class Usuario(
     var nome: String,
-    var cpf: String
+    var documento: String
 ) {
-    override fun toString(): String = "Nome[${nome}] - CPF[${cpf}]"
+    override fun toString(): String = "Nome[${nome}] - CPF[${documento}]"
 }

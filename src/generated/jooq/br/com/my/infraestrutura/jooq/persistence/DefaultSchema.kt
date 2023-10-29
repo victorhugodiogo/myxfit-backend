@@ -4,7 +4,7 @@
 package br.com.my.infraestrutura.jooq.persistence
 
 
-import br.com.my.infraestrutura.jooq.persistence.tables.Partner
+import br.com.my.infraestrutura.jooq.persistence.tables.Aluno
 
 import kotlin.collections.List
 
@@ -27,13 +27,13 @@ open class DefaultSchema : SchemaImpl("", DefaultCatalog.DEFAULT_CATALOG) {
     }
 
     /**
-     * The table <code>partner</code>.
+     * The table <code>aluno</code>.
      */
-    val PARTNER: Partner get() = Partner.PARTNER
+    val ALUNO: Aluno get() = Aluno.ALUNO
 
     override fun getCatalog(): Catalog = DefaultCatalog.DEFAULT_CATALOG
 
     override fun getTables(): List<Table<*>> = listOf(
-        Partner.PARTNER
+        Aluno.ALUNO
     )
 }

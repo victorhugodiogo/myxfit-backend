@@ -4,11 +4,11 @@
 package br.com.my.infraestrutura.jooq.persistence.tables.references
 
 
-import br.com.my.infraestrutura.jooq.persistence.tables.Partner
+import br.com.my.infraestrutura.jooq.persistence.tables.Aluno
 
 
 
 /**
- * The table <code>partner</code>.
+ * The table <code>aluno</code>.
  */
-val PARTNER: Partner = Partner.PARTNER
+val ALUNO: Aluno = Aluno.ALUNO

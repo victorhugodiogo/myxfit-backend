@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: 1
-      author: Felipe Silva
+      author: Victor Hugo
       changes:
         - createTable:
             columns:
@@ -12,4 +12,21 @@ databaseChangeLog:
                   constraints:
                     primaryKey:  true
                     nullable:  false
-            tableName: partner
+              - column:
+                  name: nome
+                  type: varchar(64)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: documento
+                  type: varchar(24)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: matricula
+                  type: varchar(32)
+                  constraints:
+                    nullable: false
+                    unique: true
+            tableName: aluno

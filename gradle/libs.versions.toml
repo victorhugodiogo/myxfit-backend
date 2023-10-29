@@ -10,6 +10,7 @@ picocli = "4.6.1"
 liquibase = "4.17.2"
 springDoc = "2.2.0"
 kotlinLogging = "5.1.0"
+jnanoid = "2.0.0"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
@@ -28,6 +29,7 @@ picocli = { module = "info.picocli:picocli", version.ref = "picocli" }
 spring-doc-ui = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springDoc" }
 spring-doc-api = { module = "org.springdoc:springdoc-openapi-starter-webmvc-api", version.ref = "springDoc" }
 kotlinLogging = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "kotlinLogging" }
+jnanoid = { module = "com.aventrix.jnanoid:jnanoid", version.ref = "jnanoid" }
 
 ## Test
 spring-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }

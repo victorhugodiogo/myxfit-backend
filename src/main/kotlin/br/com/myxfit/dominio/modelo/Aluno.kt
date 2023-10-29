@@ -1,13 +1,12 @@
 package br.com.myxfit.dominio.modelo
 
-import java.util.UUID
-
 class Aluno(
-    val alunoId: String = UUID.randomUUID().toString(),
+    val id: Long? = null,
     nome: String,
-    cpf: String
+    documento: String,
+    val matricula: String
 ) : Usuario(
     nome = nome,
-    cpf = cpf
+    documento = documento
 ) {
 }

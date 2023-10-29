@@ -44,6 +44,9 @@ dependencies {
     // jOOQ
     jooqGenerator(libs.mysql)
 
+    // JNanoId
+    implementation(libs.jnanoid)
+
     // Liquibase
     liquibaseRuntime(libs.liquibase)
     liquibaseRuntime(libs.mysql)
